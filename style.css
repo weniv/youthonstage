@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    color: white;
+    text-align: center;
+    padding: 100px 0 120px 0;
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 100%;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 20px 0 30px 0;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-description {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 25px 0 40px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    opacity: 0.95;
+}
+
+.header-highlight {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px 40px;
+    border-radius: 15px;
+    margin: 30px auto 0 auto;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.payment-info {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.payment-info strong {
+    color: #ffd700;
+    font-size: 1.5rem;
+}
+
+.event-info {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+.highlight-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.highlight-box p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.highlight-box strong {
+    color: #ffd700;
+    font-size: 1.5rem;
+}
+
+.highlight-box .small-text {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 15px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.about-item {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.about-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.about-item p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Philosophy Section */
+.philosophy {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2c3e50 0%, #4a4a4a 100%);
+    color: white;
+}
+
+.philosophy h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.philosophy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+blockquote {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    border-left: none;
+}
+
+.philosophy-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    opacity: 0.95;
+}
+
+/* Application Section */
+.application {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.application h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.application-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.contact-info, .requirements {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-info h3, .requirements h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.email {
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+.email a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.email a:hover {
+    background: #667eea;
+    color: white;
+}
+
+.requirements ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.requirements li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+}
+
+.requirements li:last-child {
+    border-bottom: none;
+}
+
+.requirements strong {
+    color: #667eea;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.cta h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        min-height: 60vh;
+        padding: 80px 0 100px 0;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .header-highlight {
+        padding: 25px 30px;
+        margin: 25px 15px 0 15px;
+    }
+
+    .payment-info {
+        font-size: 1.2rem;
+    }
+
+    .payment-info strong {
+        font-size: 1.3rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1.1rem;
+    }
+
+    .highlight-box {
+        padding: 30px 20px;
+    }
+
+    .highlight-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .about h2, .philosophy h2, .application h2 {
+        font-size: 2rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .application-box {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    blockquote {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+
+    .philosophy-text p {
+        font-size: 1.1rem;
+    }
+
+    .cta {
+        padding: 40px 20px;
+    }
+
+    .cta h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    header {
+        padding: 60px 0 80px 0;
+        min-height: 50vh;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .header-highlight {
+        padding: 20px 25px;
+        margin: 20px 10px 0 10px;
+    }
+
+    .payment-info {
+        font-size: 1.1rem;
+    }
+
+    .event-info {
+        font-size: 1rem;
+    }
+
+    .hero, .about, .philosophy, .application {
+        padding: 60px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .highlight-box {
+        margin: 0 10px;
+    }
+
+    .about-item, .contact-info, .requirements {
+        padding: 30px 20px;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h2, .about h2, .philosophy h2, .application h2 {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.highlight-box, .about-item, .application-box, .cta {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
